@@ -1,0 +1,203 @@
+
+body{
+    background: rgba(128, 128, 128, 0.09);
+    height: auto;
+    margin: 55px auto;
+    max-width: 80%;
+}
+input[name=simple]{
+    border: 1px solid grey;
+    border-radius: 3px;
+
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+input[name=simple]::placeholder{
+    color: gray;
+    padding-left: 10px;
+}
+input[name=valid]{
+    border: 1px solid greenyellow;
+    border-radius: 3px;
+    background-image: url("valid.png");
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+input[name=valid]::placeholder{
+    color: greenyellow;
+    padding-left: 10px;
+}
+input[name=invalid]{
+    border: 1px solid red;
+    border-radius: 3px;
+    background-image: url("invalid.png");
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+input[name=invalid]::placeholder{
+    color: red;
+    padding-left: 10px;
+}
+input[type="text"]{
+    width: 125px;
+    height: 20px;
+}
+.check {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+}
+.one {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+}
+.one + label {
+    cursor: pointer;
+}
+
+/* close чекбокс. */
+.check:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.check:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 48px;
+}
+/*прямоугольник большой*/
+.check:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #ec0c53;
+}
+/* прямоуголник маленький */
+.check:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 20px;
+    height: 18px;
+    border-radius: 4px;
+    background: #ec0c53;
+}
+/* включенный большой прямоугольник */
+.check:checked + label:before {
+    border: 1px solid #32a75a;
+}
+/* включен прямоуголник маленький */
+.check:checked + label:after {
+    left: 21px;
+    background: #32a75a;
+
+}
+
+/*radio*/
+.radio:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.radio:not(checked) + label {
+    position: relative;
+    padding: 18px 0 0 28px;
+}
+/*krug большой*/
+.radio:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #32a75a;
+}
+/* включенный большой krug  */
+.radio:checked  + label:before {
+    border: 1px solid #32a75a;
+}
+/* включен krug  маленький */
+.radio:checked + label:after {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 7px;
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    background: #32a75a;
+
+}
+.radios{
+    display: flex;
+    margin-top: -18px;
+}
+
+/*submit*/
+form:nth-child(4){
+    margin-top: -15px;
+}
+.submits > button{
+    width: 60px;
+    height: 20px;
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.submits button:nth-child(1), button:nth-child(2),button:nth-child(6){
+    background: green;
+
+}
+.submits button:nth-child(1):active{
+    background: #47c170;
+    border: none;
+    border-radius: 3px;
+
+}
+.submits button:nth-child(2):hover{
+    background: #47c170;
+    border: none;
+}
+.submits button:nth-child(3), button:nth-child(7){
+    background: #e24a91;
+}
+.submits button:nth-child(4){
+    background: #d9297a;
+}
+.submits button:nth-child(4):hover{
+    background: #e782b1;
+
+}
+.submits button:nth-child(5){
+    background: grey;
+}
+.submits button:nth-child(6),button:nth-child(7) {
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+/*textarea*/
+.message{
+    margin-top: 20px;
+}
+#message {
+    width: 280px;
+    height: 100px;
+    color: grey;
+    padding-left: 10px;
+}

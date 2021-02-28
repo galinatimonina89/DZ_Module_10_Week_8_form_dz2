@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dz2</title>
+    <link rel="stylesheet" type="text/css" href="dz2.css">
+</head>
+<body>
+    <section class="all">
+        <form>
+            <label><h1>Inputs</h1></label>
+            <div>
+                <input type="text" placeholder="Enter some text" name="simple">
+                <input type="text" placeholder="valid text" name="valid">
+                <input type="text" placeholder="invalid text" name="invalid">
+            </div>
+        </form>
+        <form>
+            <label><h2>Check boxes</h2></label>
+            <div>
+                <input type="checkbox" id = "one" class="check one">
+                <label for="one"><span>Subscribe</span></label>
+                <input type="checkbox" id = "two" class="check two">
+                <label for="two">Subscribe</label>
+            </div>
+        </form>
+        <form>
+            <label><h2>Radio buttons</h2></label>
+            <div class="block radios">
+                <p>Gender:</p>
+                <input type="radio" id = "three" class="radio" name="radio">
+                <label for="three">Male</label>
+                <input type="radio" id = "four" class="radio" name="radio">
+                <label for="four">Female</label>
+            </div>
+        </form>
+        <form method="get">
+            <h2>Buttons</h2>
+            <label class="blocks submits">
+                <button type="submit">Active</button>
+                <button type="submit">Hover</button>
+                <button type="submit">Danger</button>
+                <button type="submit">Hover</button>
+                <button type="submit" disabled>Disabled</button>
+                <button type="submit">+</button>
+                <button type="submit">-</button>
+            </label>
+        </form>
+        <div class="message">
+            <h2>Text area</h2>
+            <textarea id="message">Enter some text...</textarea>
+        </div>
+    </section>
+</body>
+</html>
